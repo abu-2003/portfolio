@@ -1,0 +1,38 @@
+.brands {
+    color: black;
+    font-size: 2rem;
+    transition: color 0.3s ease;
+}
+
+.icon:hover {
+    background-image: linear-gradient(to bottom right, red, yellow, purple, green);
+    display: inline-block;
+    padding: 10px; /* Add padding for better visual appearance */
+    border-radius: 50%; /* Optional: Make the background circle-shaped */
+}
+
+.icon:hover .brands {
+    color: rgb(238, 240, 241);
+    animation: rotate 3s infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(30deg);
+    }
+    20% {
+        transform: rotate(-30deg);
+    }
+    40% {
+        transform: rotate(30deg);
+    }
+    60% {
+        transform: rotate(-30deg);
+    }
+    80% {
+        transform: rotate(30deg);
+    }
+    100% {
+        transform: rotate(-30deg);
+    }
+}
